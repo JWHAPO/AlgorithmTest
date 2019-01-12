@@ -4,14 +4,19 @@ package main;/*
  * Description :
  */
 
-import questions.Question6;
+import questions.Question9;
 
 public class Main {
 
     public static void main(String[] args){
 
-        Question6 question6 = new Question6();
-        question6.solution(new int[]{1, 5, 2, 6, 3, 7, 4}, new int[][]{{2, 5, 3}, {4, 4, 1}, {1, 7, 3}});
+        Question9 question9 = new Question9();
+
+        Long sum = question9.solution(1,100);
+        System.out.println("sum -> "+sum);
+
     }
+
+
 
 }

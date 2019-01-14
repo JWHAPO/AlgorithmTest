@@ -4,16 +4,16 @@ package main;/*
  * Description :
  */
 
+import questions.Question10;
 import questions.Question9;
 
 public class Main {
 
     public static void main(String[] args){
 
-        Question9 question9 = new Question9();
+        Question10 question10 = new Question10();
 
-        Long sum = question9.solution(1,100);
-        System.out.println("sum -> "+sum);
+        System.out.println(question10.solution("pPaaaayYyyy"));
 
     }
 

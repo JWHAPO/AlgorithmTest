@@ -4,6 +4,7 @@ package main;/*
  * Description :
  */
 
+import questions.MergeNames;
 import questions.Question10;
 import questions.Question9;
 
@@ -11,9 +12,11 @@ public class Main {
 
     public static void main(String[] args){
 
-        Question10 question10 = new Question10();
 
-        System.out.println(question10.solution("pPaaaayYyyy"));
+        String[] names1 = new String[] {"Ava", "Emma", "Olivia"};
+        String[] names2 = new String[] {"Olivia", "Sophia", "Emma"};
+
+        System.out.println(String.join(",", MergeNames.uniqueNames(names1,names2)));
 
     }
 

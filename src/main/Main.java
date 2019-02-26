@@ -13,8 +13,8 @@ public class Main {
     public static void main(String[] args){
 
 
-        String[] names1 = new String[] {"Ava", "Emma", "Olivia"};
-        String[] names2 = new String[] {"Olivia", "Sophia", "Emma"};
+        String[] names1 = new String[] {"Ava", "Emma", "Olivia","Mr.Kim"};
+        String[] names2 = new String[] {"Olivia", "Sophia", "Emma","Mr.Kim"};
 
         System.out.println(String.join(",", MergeNames.uniqueNames(names1,names2)));
 

@@ -5,10 +5,6 @@ package main;/*
  */
 
 import questions.Question11;
-import questions.alert_service.AlertService;
-import questions.alert_service.MapAlertDAO;
-
-import java.util.stream.Stream;
 
 public class Main {
 

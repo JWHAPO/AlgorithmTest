@@ -31,20 +31,28 @@ import java.util.stream.Stream;
  */
 public class Question11 {
 
+    public void combination(int[] numbers, int n) {
+        int[] temp = new int[numbers.length];
+
+    }
+
     public String solution(int[] numbers){
 
-        List<Integer> newNumbers = new ArrayList<>();
-        StringBuilder sb = new StringBuilder();
-        int[] temp;
 
-        for(int number : numbers){
-            temp = Stream.of(String.valueOf(number).split(""))
-                    .mapToInt(Integer::parseInt).toArray();
-            for(int i : temp) newNumbers.add(i);
-        }
-        Collections.sort(newNumbers, Collections.reverseOrder());
-        for (Integer i : newNumbers)sb.append(i);
-
-        return sb.toString();
+        return "";
+        //아래는 한 자리씩 쪼개서 조합함.....문제를 이해못햇었음.
+//        List<Integer> newNumbers = new ArrayList<>();
+//        StringBuilder sb = new StringBuilder();
+//        int[] temp;
+//
+//        for(int number : numbers){
+//            temp = Stream.of(String.valueOf(number).split(""))
+//                    .mapToInt(Integer::parseInt).toArray();
+//            for(int i : temp) newNumbers.add(i);
+//        }
+//        Collections.sort(newNumbers, Collections.reverseOrder());
+//        for (Integer i : newNumbers)sb.append(i);
+//
+//        return sb.toString();
     }
 }

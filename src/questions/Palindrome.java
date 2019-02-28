@@ -1,15 +1,10 @@
 package questions;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-
 /**
  * AlgorithmTest
  * Class: Palindrome
  * Created by hapo on 2019-02-27.
- * Description:
+ * Description: 출처 testdome (https://www.testdome.com)
  *
  * A palindrome is a word that reads the same backward or forward.
  *

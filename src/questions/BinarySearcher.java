@@ -4,7 +4,7 @@ package questions;
  * AlgorithmTest
  * Class: BinarySearcher
  * Created by hapo on 2019-02-27.
- * Description:
+ * Description: 출처 testdome (https://www.testdome.com)
  */
 
 class Node {

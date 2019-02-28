@@ -1,7 +1,7 @@
 package questions;/*
  * Created by hapo
  * Date : 19. 1. 3 오전 12:31
- * Description :
+ * Description : 출처 : 프로그래머스 (https://programmers.co.kr)
  *
  * 2016년 (from Programmers.co.kr)
  * 문제 설명

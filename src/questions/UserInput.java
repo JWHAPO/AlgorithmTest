@@ -4,7 +4,7 @@ package questions;
  * AlgorithmTest
  * Class: UserInput
  * Created by hapo on 2019-02-26.
- * Description:
+ * Description: 출처 testdome (https://www.testdome.com)
  *
  * User interface contains two types of user input controls:
  * TextInput, which accepts all characters and NumericInput, which accepts only digits.

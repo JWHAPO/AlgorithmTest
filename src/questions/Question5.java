@@ -1,7 +1,7 @@
 package questions;/*
  * Created by hapo
  * Date : 19. 1. 3 오전 12:35
- * Description :
+ * Description : 출처 : 프로그래머스 (https://programmers.co.kr)
  * 가운데 글자 가져오기 (from Programmers.co.kr)
  * 문제 설명
  * 단어 s의 가운데 글자를 반환하는 함수, solution을 만들어 보세요. 단어의 길이가 짝수라면 가운데 두글자를 반환하면 됩니다.

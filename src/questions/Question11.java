@@ -2,14 +2,14 @@ package questions;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Stream;
 
 /**
  * AlgorithmTest
  * Class: Question11
  * Created by hapo on 2019-02-26.
- * Description:
+ * Description: 출처 : 프로그래머스 (https://programmers.co.kr)
  *
  * 가장 큰 수
  * 문제 설명
@@ -28,18 +28,44 @@ import java.util.stream.Stream;
  * [6, 10, 2]	6210
  * [3, 30, 34, 5, 9]	9534330
  *
+ *  참고: https://cwondev.tistory.com/15
  */
 public class Question11 {
-
-    public void combination(int[] numbers, int n) {
-        int[] temp = new int[numbers.length];
-
-    }
-
     public String solution(int[] numbers){
+        String answer = "";
 
-
-        return "";
+        List<Integer> list = new ArrayList<>();
+        for(int i = 0; i < numbers.length; i++) {
+            list.add(numbers[i]);
+        }
+        Collections.sort(list, new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                String as = String.valueOf(o1);
+                String bs = String.valueOf(o2);
+                if (Integer.parseInt(as+bs) < Integer.parseInt(bs+as)){
+                    return -1;
+                }else if(Integer.parseInt(as+bs) > Integer.parseInt(bs+as)){
+                    return 1;
+                }else{
+                    return 0;
+                }
+            }
+        });
+//        Collections.sort(list, (a, b) -> {
+//            String as = String.valueOf(a), bs = String.valueOf(b);
+//            return -Integer.compare(Integer.parseInt(as + bs), Integer.parseInt(bs + as));
+//        });
+        StringBuilder sb = new StringBuilder();
+        for(Integer i : list) {
+            sb.append(i);
+        }
+        answer = sb.toString();
+        if(answer.charAt(0) == '0') {
+            return "0";
+        }else {
+            return answer;
+        }
         //아래는 한 자리씩 쪼개서 조합함.....문제를 이해못햇었음.
 //        List<Integer> newNumbers = new ArrayList<>();
 //        StringBuilder sb = new StringBuilder();

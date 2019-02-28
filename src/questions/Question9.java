@@ -1,7 +1,7 @@
 package questions;/*
  * Created by hapo
  * Date : 19. 1. 12 오후 8:30
- * Description :
+ * Description : 출처 : 프로그래머스 (https://programmers.co.kr)
  *
  * 두 정수 사이의 합
  * 문제 설명

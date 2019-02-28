@@ -1,7 +1,7 @@
 package questions;/*
  * Created by hapo
  * Date : 19. 2. 25 오후 11:14
- * Description :  두 배열의 중복제거
+ * Description :  두 배열의 중복제거 출처 testdome (https://www.testdome.com)
  */
 
 import java.util.ArrayList;

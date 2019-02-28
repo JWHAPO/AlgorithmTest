@@ -7,7 +7,7 @@ import java.util.UUID;
  * AlgorithmTest
  * Class: AlertService
  * Created by hapo on 2019-02-26.
- * Description:
+ * Description: 출처 testdome (https://www.testdome.com)
  *
  * Refactor the AlertService and MapAlertDAO classes:
  *

@@ -5,14 +5,23 @@ package main;/*
  */
 
 import questions.Question11;
+import questions.Question12;
+import questions.Question13;
 
 public class Main {
 
     public static void main(String[] args){
 
-        //Question11
-        Question11 question11 = new Question11();
-        System.out.println("result:"+question11.solution(new int[]{6, 10, 2}));
+        Question13 question13 = new Question13();
+        question13.solution("Zbcdefg");
+//        //Question12
+//        Question12 question12 = new Question12();
+//        String[] arr = new String[]{"abce", "abcd", "cdx"};
+//        question12.solution(arr,2);
+
+//        //Question11
+//        Question11 question11 = new Question11();
+//        System.out.println("result:"+question11.solution(new int[]{6, 10, 2}));
 
 
 

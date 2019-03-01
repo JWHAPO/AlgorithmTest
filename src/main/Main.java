@@ -8,6 +8,7 @@ import org.omg.IOP.Encoding;
 import questions.Question11;
 import questions.Question12;
 import questions.Question13;
+import questions.Question14;
 
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
@@ -16,11 +17,12 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args){
+
+        Question14 question14 = new Question14();
+        System.out.println("answer:"+question14.solution(new int[]{5,5,5,5,5,5,5,5},0));
+
 //        List<String> list = new ArrayList<>();
 //        list.add("AAA");
-
-
-
 
         //Question 13
 //        Question13 question13 = new Question13();

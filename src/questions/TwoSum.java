@@ -1,5 +1,7 @@
 package questions;
 
+import java.util.HashMap;
+
 /**
  * AlgorithmTest
  * Class: TwoSum
@@ -17,21 +19,16 @@ package questions;
  *
  */
 public class TwoSum {
-    public static int[] findTwoSum(int[] list, int sum) {
-        int[] result = new int[2];
-        int secondNum = 0;
-        for(int i = 0; i<list.length; i++){
-            for(int j = i+1; j < list.length; j++){
-                if(list[i]+list[j] == sum){
-                    secondNum = j;
-                }
-            }
-            result[0] = i;
-            result[1] = secondNum;
-            break;
-        }
+    public static int[] findTwoSum(int[] list, int target) {
+        HashMap<Integer, Integer> map = new HashMap<>();
 
-        return result;
+        for (int i = 0; i < list.length; i++) {
+            if(map.containsKey(target-list[i])){
+                return new int[]{map.get(target-list[i]), i};
+            }
+                map.put(list[i],i);
+        }
+        return null;
     }
 
     public static void main(String[] args) {

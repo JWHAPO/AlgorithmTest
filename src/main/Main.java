@@ -6,13 +6,17 @@ package main;/*
 
 import questions.Question14;
 import questions.Question15;
+import questions.Question17;
 
 public class Main {
 
     public static void main(String[] args){
 
-        Question15 question15 = new Question15();
-        System.out.println(question15.solution("12345"));
+        Question17 question17 = new Question17();
+        System.out.println("solution:"+question17.solution(10));
+
+//        Question15 question15 = new Question15();
+//        System.out.println(question15.solution("12345"));
 //        Question14 question14 = new Question14();
 //        System.out.println("answer:"+question14.solution(new int[]{1,1,1,1,1},3));
 

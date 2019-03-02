@@ -7,13 +7,17 @@ package main;/*
 import questions.Question14;
 import questions.Question15;
 import questions.Question17;
+import questions.SortedSearch;
 
 public class Main {
 
     public static void main(String[] args){
 
-        Question17 question17 = new Question17();
-        System.out.println("solution:"+question17.solution(1000000));
+
+        System.out.println("SortedSearch.countNumbers(new int[]{1,2,3}, 4): "
+                +SortedSearch.countNumbers(new int[]{1,2,3}, 4));
+//        Question17 question17 = new Question17();
+//        System.out.println("solution:"+question17.solution(1000000));
 
 //        Question15 question15 = new Question15();
 //        System.out.println(question15.solution("12345"));

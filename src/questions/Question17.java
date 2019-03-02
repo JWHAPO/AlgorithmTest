@@ -28,21 +28,25 @@ import java.util.List;
 public class Question17 {
     public int solution(int n) {
         int answer = 0;
+        Long starttime = System.currentTimeMillis();
 
-        List<Integer> list = new ArrayList<>();
-        list.add(0);
-        list.add(0);
-        for(int i=2; i<=n; i++){
-            list.add(i);
+        int[] arr = new int[n];
+        for(int i=1; i<=arr.length; i++){
+            arr[i-1] = i;
         }
 
-        for(int i=2; i<=n; i++){
-            if(list.get(i) == 0) continue;
-            for (int j = i+i; j <= n; j+=i) {
-                list.set(j,0);
+        for(int i=1; i<=n; i++){
+            if(arr[i-1] == 0 || i==1) continue;
+            for (int j = arr[i-1] + arr[i-1]; j <= n; j+=arr[i-1]) {
+                arr[j-1] = 0;
             }
-            if(list.get(i) != 0)answer++;
+            if(arr[i-1] != 0) answer++;
         }
+
+        Long endtime = System.currentTimeMillis();
+
+        System.out.println((endtime - starttime) + "mill seconds");
+
         return answer;
     }
 }

@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args){
 
         Question17 question17 = new Question17();
-        System.out.println("solution:"+question17.solution(10));
+        System.out.println("solution:"+question17.solution(1000000));
 
 //        Question15 question15 = new Question15();
 //        System.out.println(question15.solution("12345"));

@@ -1,9 +1,5 @@
 package questions;
 
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.Queue;
-
 /**
  * AlgorithmTest
  * Class: Question14
@@ -30,12 +26,36 @@ import java.util.Queue;
  *
  */
 public class Question14 {
-
+    private static int RESULT = 0;
     public int solution(int[] numbers, int target) {
-        int answer = 0;
-        int[] temp = new int[numbers.length];
-
-        return answer;
+        dfs(numbers, target, 0);
+        return RESULT;
     }
+    public void dfs(int[] numbers,int target, int index){
+        if(index == numbers.length){
+            int result = 0;
+            for (int i = 0; i < numbers.length; i++) {
+                result += numbers[i];
+            }
+            if(target == result) RESULT ++;
+            return;
+        }else{
+            numbers[index] *= 1;
+            dfs(numbers, target, index+1);
+            numbers[index] *= -1;
+            dfs(numbers, target, index+1);
+        }
+
+    }
+
+//    int dfs(int[] numbers, int n, int sum, int target) {
+//        if(n == numbers.length) {
+//            if(sum == target) {
+//                return 1;
+//            }
+//            return 0;
+//        }
+//        return dfs(numbers, n + 1, sum + numbers[n], target) + dfs(numbers, n + 1, sum - numbers[n], target);
+//    }
 
 }

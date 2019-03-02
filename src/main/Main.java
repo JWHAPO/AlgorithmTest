@@ -4,22 +4,17 @@ package main;/*
  * Description :
  */
 
-import org.omg.IOP.Encoding;
-import questions.Question11;
-import questions.Question12;
-import questions.Question13;
 import questions.Question14;
-
-import java.io.UnsupportedEncodingException;
-import java.util.ArrayList;
-import java.util.List;
+import questions.Question15;
 
 public class Main {
 
     public static void main(String[] args){
 
-        Question14 question14 = new Question14();
-        System.out.println("answer:"+question14.solution(new int[]{5,5,5,5,5,5,5,5},0));
+        Question15 question15 = new Question15();
+        System.out.println(question15.solution("12345"));
+//        Question14 question14 = new Question14();
+//        System.out.println("answer:"+question14.solution(new int[]{1,1,1,1,1},3));
 
 //        List<String> list = new ArrayList<>();
 //        list.add("AAA");

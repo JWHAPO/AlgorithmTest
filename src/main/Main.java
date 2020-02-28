@@ -4,10 +4,14 @@ package main;/*
  * Description :
  */
 
+import questions.Question18;
+
 public class Main {
 
     public static void main(String[] args){
+        Question18 a = new Question18();
 
+        System.out.println(a.secretPhoneNumber("010-1111-2222"));
     }
 
 }
